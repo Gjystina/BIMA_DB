@@ -53,7 +53,7 @@
 			$to = 'samlul12@htl-shkoder.com';
 			$subject = 'BIMA';
 			$body = "Nga: $name\nE-Mail: $email\nMessage: $message";
-			if (mail($to, $subject, $body)){
+			if (mail($to, $subject, $body,  "From: BIMA<bima@website.al>\r\n")){
 				$success = "Faleminderit qe na kontaktuat!";
 				$name = $email = $subject = $message = $from='';
 			}
